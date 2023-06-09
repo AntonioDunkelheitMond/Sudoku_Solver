@@ -45,17 +45,13 @@ for i = 1:n
        continue
      end
    end
-   
-   Matrix_left_rows(i,:) = reference_row;
-   
-     
+   Matrix_left_rows(i,:) = reference_row; 
 end
 clear reference_row
 toc()
 %%  COLUMNS
 tic()
 Matrix_left_columns = zeros(n,m);
-
 
 for j = 1:m
   reference_column = [1 2 3 4 5 6 7 8 9];
